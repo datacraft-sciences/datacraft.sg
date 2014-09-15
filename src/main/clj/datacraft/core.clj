@@ -13,7 +13,8 @@
             [clojure.string]
             [clojure.java.io :as io])
   (:require [clojure.tools.logging :as log])
-  (:require [org.httpkit.client :as http]))
+  (:require [org.httpkit.client :as http])
+  (:gen-class))
 
 (defroutes app-routes
   (route/resources "/")   ;; defaults to reading from /public path on classpath
