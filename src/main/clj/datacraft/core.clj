@@ -2,7 +2,6 @@
   (:use [org.httpkit.server :only [run-server]]
         [mikera.cljutils error]
         [clojure.repl])
-  (:require [clojure.tools.nrepl.server :as nrepl])
   (:require [compojure.handler :as handler]
             [compojure.route :as route]
             [compojure.core :as cc :refer [GET POST DELETE PUT ANY OPTIONS defroutes]]
