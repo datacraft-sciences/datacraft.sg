@@ -117,6 +117,22 @@ p2 {
   text-align: center;
   text-decoration: none;
 }
+
+.banner-button {
+  position:absolute;
+  right:0px;
+  margin-top: 25px;
+  display: inline;
+  padding: 11px 38px;
+  border-radius: 0px;
+  background-color: #94b6dd;
+  font-family:'Droid Sans', sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+}
 .button:hover {
   color: #2a6ebb;
   font-weight: 700;
@@ -191,6 +207,7 @@ p2 {
   margin-right: auto;
   margin-left: auto;
 }
+
 .row {
   margin-top: 50px;
   margin-bottom: 25px;
@@ -358,6 +375,20 @@ p2 {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+}
+
+.banner{
+  position: relative;
+  left: 0px;
+  top: 100px;
+  right: 100px;
+  bottom: 0px;
+  display: block;
+  min-height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: justify;
+  background-color: transparent;
 }
 
 @media (max-width: 991px) {
