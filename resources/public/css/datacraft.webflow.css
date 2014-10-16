@@ -69,6 +69,17 @@ h6 {
   line-height: 18px;
   font-weight: 700;
 }
+h7 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-left: 1cm;
+  font-family:'Droid Sans', sans-serif;
+  color: #2a6ebb;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: left;
+}
 p {
   margin-top: 15px;
   margin-bottom: 5px;
@@ -79,6 +90,18 @@ p {
   font-size: 13px;
   line-height: 20px;
   text-align: center;
+}
+p2 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding-right: 20px;
+  padding-left: 1cm;
+  font-family:'Droid Sans', sans-serif;
+  color: black;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: justify;
+  
 }
 .button {
   display: block;
@@ -327,6 +350,16 @@ p {
   font-size: 14px;
   font-weight: 700;
 }
+.some-container {
+  width:940px;
+  padding-left:77px;
+}
+.some-other-class{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+}
+
 @media (max-width: 991px) {
   h1 {
     padding-right: 10px;
