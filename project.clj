@@ -5,6 +5,7 @@
   :dependencies [[net.mikera/trellis "0.0.2"]
                  [net.mikera/timeline "0.3.0"]
                  [compojure "1.1.6"]
+                 [selmer "0.7.2"]
                  [log4j/log4j "1.2.16" :exclusions [javax.mail/mail
                                               javax.jms/jms
                                               com.sun.jdmk/jmxtools
