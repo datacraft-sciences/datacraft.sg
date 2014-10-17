@@ -33,9 +33,9 @@
                     <p>Perhaps you want the <a href=\"\\index.html\">index.html</a>?</p>"))
 
 (def app
-  (-> #'app-routes 
+  (-> app-routes 
       ;; (wrap-cors :access-control-allow-origin #".*")
       (handler/site)))
 
 (defn -main [& args] ;; entry point, lein run will enter from here
-  (run-server app {:port 80}))
+  (run-server #'app {:port 80}))
