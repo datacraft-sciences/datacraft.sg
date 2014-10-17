@@ -13,10 +13,15 @@
             [clojure.string]
             [clojure.java.io :as io])
   (:require [clojure.tools.logging :as log])
+  (:require [selmer.parser :as selmer]) 
   (:require [org.httpkit.client :as http])
   (:gen-class))
 
+(selmer.parser/set-resource-path! (clojure.java.io/resource "templates"))
+
 (defroutes app-routes
+  (GET "/index.html" params (selmer/render-file "index.html" params))
+  
   (route/resources "/")   ;; defaults to reading from /public path on classpath
   (route/files "/" {:root "~/public"})
   (route/files "/" {:root "/public"})
