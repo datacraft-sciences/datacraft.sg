@@ -21,6 +21,7 @@
 
 (defroutes app-routes
   (GET "/index.html" params (selmer/render-file "index.html" params))
+  (GET "/solutions.html" params (selmer/render-file "solutions.html" params))
   
   (route/resources "/")   ;; defaults to reading from /public path on classpath
   (route/files "/" {:root "~/public"})
