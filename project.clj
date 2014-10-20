@@ -2,7 +2,7 @@
   :description "FIXME: write this!"
   :url "http://example.com/FIXME"
 
-  :dependencies [[net.mikera/trellis "0.0.3"]
+  :dependencies [[net.mikera/trellis "0.0.4"]
                  [net.mikera/timeline "0.3.0"]
                  [selmer "0.7.2"]
                  [log4j/log4j "1.2.17" :exclusions [javax.mail/mail
