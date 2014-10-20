@@ -3,6 +3,7 @@
         [mikera.cljutils error]
         [clojure.repl])
   (:require [compojure.handler :as handler]
+            [clout.core] 
             [compojure.route :as route]
             [compojure.core :as cc :refer [GET POST DELETE PUT ANY OPTIONS defroutes]]
             [ring.util.response :as resp]
