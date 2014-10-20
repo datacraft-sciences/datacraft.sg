@@ -103,12 +103,20 @@ p2 {
   text-align: justify;
   
 }
+
+p3 {
+  font-family:'Droid Sans', sans-serif;
+  color: black;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: left;
+}
 .button {
   display: block;
   margin-top: 15px;
   margin-right: 50px;
   margin-left: 50px;
-  padding: 4px 15px;
+  padding: 7px 15px;
   border-radius: 0px;
   background-color: #94b6dd;
   font-family:'Droid Sans', sans-serif;
@@ -232,7 +240,7 @@ td {
   bottom: -116px;
   z-index: 0;
   display: block;
-  margin-top: 50px;
+  margin-top: 0px;
   margin-right: auto;
   margin-left: auto;
   float: none;
@@ -244,6 +252,7 @@ td {
   text-align: center;
   letter-spacing: 1px;
 }
+
 .datacraft {
   position: static;
   padding-top: 30px;
@@ -293,6 +302,7 @@ td {
   font-weight: 400;
   letter-spacing: 0px;
 }
+
 .p2 {
   display: block;
   width: 300px;
