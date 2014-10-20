@@ -138,6 +138,19 @@ p2 {
   font-weight: 700;
   text-align: center;
 }
+
+.table {
+   bordering-spacing: 15px;
+}
+
+td {
+  vertical-align:top;
+}
+
+.blank_row{
+  height: 15px
+}
+
 .nav {
   position: static;
   overflow-x: visible;
