@@ -111,6 +111,48 @@ p3 {
   line-height: 20px;
   text-align: left;
 }
+
+#box1 {
+  font-family:'Droid Sans', sans-serif;
+  color: black;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: left;
+}
+
+#box2 {
+  font-family:'Droid Sans', sans-serif;
+  color: black;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: left;
+}
+
+#box3 {
+  font-family:'Droid Sans', sans-serif;
+  color: black;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: left;
+}
+
+
+
+
+ul.no_bullet {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+li.check {
+  background-image:url('check.png');
+  background-repeat:no-repeat;
+  background-position:0px -1px;
+  margin-left:20px;
+  padding: 2px 30px; 
+}
+
 .button {
   display: block;
   margin-top: 15px;
@@ -124,6 +166,24 @@ p3 {
   font-weight: 400;
   text-align: center;
   text-decoration: none;
+}
+
+.button2 {
+  display: inline;
+  margin-top: 15px;
+  padding: 9px 107px;
+  background-color: #94b6dd;
+  font-family:'Droid Sans', sans-serif;
+  color: white;
+  font-weight: 400;
+  text-align: left;
+  text-decoration: none;
+}
+
+.button2:hover {
+  position:relative;
+  background-color: #2a6ebb;
+  top:1px;
 }
 
 .banner-button {
@@ -149,6 +209,16 @@ p3 {
 
 .table {
    bordering-spacing: 15px;
+}
+
+.table2{
+  width:80%; 
+  margin-left:100px; 
+}
+
+td2 {
+  vertical-align:top;
+  padding: 10px;
 }
 
 td {
@@ -290,6 +360,15 @@ td {
   min-height: 1px;
   margin-top: 30px;
   margin-bottom: 30px;
+  background-color: #a6a6a6;
+}
+
+.line2 {
+  width:1px;
+  height:350px;
+  float:right;
+  margin-top:70px;
+  margin-right:-20px;
   background-color: #a6a6a6;
 }
 .footer-text {
