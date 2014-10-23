@@ -52,7 +52,6 @@ h5 {
   position: relative;
   top: -10px;
   margin-top: 0px;
-  margin-bottom: 10px;
   font-family:'Droid Sans', sans-serif;
   color: #a6a6a6;
   font-size: 12px;
@@ -153,6 +152,15 @@ li.check {
   padding: 2px 30px; 
 }
 
+.arrow-left {
+	width: 0; 
+	height: 0; 
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent; 
+	border-right:15px solid #94b6dd;
+	margin-bottom:-25px
+}
+
 .button {
   display: block;
   margin-top: 15px;
@@ -205,6 +213,10 @@ li.check {
   color: #2a6ebb;
   font-weight: 700;
   text-align: center;
+}
+
+.switchgroup { 
+  display: none; 
 }
 
 .table {
@@ -365,7 +377,7 @@ td {
 
 .line2 {
   width:1px;
-  height:350px;
+  height:380px;
   float:right;
   margin-top:70px;
   margin-right:-20px;
