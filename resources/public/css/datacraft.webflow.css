@@ -379,6 +379,7 @@ td2 {
 
 td {
   vertical-align:top;
+  width:25%
 }
 
 .blank_row{
@@ -453,6 +454,11 @@ td {
   display: block;
   margin-right: auto;
   margin-left: auto;
+}
+
+.socialicon {
+  display: inline;
+  margin: 5px
 }
 
 .row {
