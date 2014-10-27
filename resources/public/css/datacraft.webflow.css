@@ -30,13 +30,13 @@ h2 {
   text-transform: none;
 }
 h3 {
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 0px;
   font-family:'Droid Sans', sans-serif;
-  color: #333;
+  color: #2a6ebb;
   font-size: 20px;
   line-height: 30px;
-  font-weight: 700;
+  font-weight: 400;
 }
 h4 {
   margin-top: 10px;
