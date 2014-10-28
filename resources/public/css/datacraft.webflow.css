@@ -110,6 +110,13 @@ p3 {
   text-align: left;
 }
 
+.icon-div {
+	width: 50px;
+	height: 50px;
+	margin-left: auto;
+    margin-right: auto;
+}
+
 #box1 {
   font-family:'Droid Sans', sans-serif;
   color: black;
