@@ -23,7 +23,15 @@
 		<script type="text/javascript">
 		<!--
 
+		function switch_buttons (button) {
+			document.getElementById('box1button').style.backgroundColor="#94b6dd";
+			document.getElementById('box2button').style.backgroundColor="#94b6dd";
+			document.getElementById('box3button').style.backgroundColor="#94b6dd";
+			document.getElementById(button).style.backgroundColor="#2a6ebb";
+		};
+		
 		function visibility_switch(id) {
+			switch_buttons(id+"button");
 
 	    if(id == 'box1') {
     		document.getElementById('box1').style.display = "block";
@@ -42,13 +50,15 @@
     		document.getElementById('box1').style.display = "none";
     		document.getElementById('box2').style.display = "none";
     		}
-   		}
+   		};
 		
 
 //-->
 </script>
 	
-	<a class="button2" href="#" onclick="visibility_switch('box1');">Data Value Chain</a> | <a class="button2" href="#" onclick="visibility_switch('box2');">Our Offerings</a> | <a class="button2" href="#" onclick="visibility_switch('box3');">Case Studies</a>
+	<a id = "box1button" class="button2" style="background-color: #2a6ebb" href="#" onclick="visibility_switch('box1');">Data Value Chain</a> | 
+	<a id = "box2button" class="button2" href="#" onclick="visibility_switch('box2');">Our Offerings</a> | 
+	<a id = "box3button" class="button2" href="#" onclick="visibility_switch('box3');">Case Studies</a>
 	<br/><br/><br/>
 	<div id="box1">
 		<h3 style="margin-top: 0px">Data Value Chain</h3>
