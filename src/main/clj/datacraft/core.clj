@@ -23,6 +23,10 @@
 (defroutes app-routes
   (GET "/index.html" params (selmer/render-file "index.html" params))
   (GET "/solutions.html" params (selmer/render-file "solutions.html" params))
+  (GET "/technology.html" params (selmer/render-file "technology.html" params))
+  (GET "/why-datacraft.html" params (selmer/render-file "why-datacraft.html" params))
+  (GET "/about-us.html" params (selmer/render-file "about-us.html" params))
+  (GET "/contact-us.html" params (selmer/render-file "contact-us.html" params))
   
   (route/resources "/")   ;; defaults to reading from /public path on classpath
   (route/files "/" {:root "~/public"})
