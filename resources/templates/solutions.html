@@ -3,12 +3,219 @@
 <html data-wf-site="5411185b8ac98ae336ef070c"
 	data-wf-page="5411185b8ac98ae336ef070d">
 {% include "head.html" %}
+<script
+	src="js-image-slider.js"></script>
 <body>
 {% include "navbar.html" %}
+	
 	<div class="w-container content">
-		<h2>Solutions</h2>
-		<p class="p3">Coming soon.......</p>
+		<h2 style="margin-bottom:15px">SOLUTIONS</h2>
+		<p3>
+			Datacraft delivers advanced data science software solutions, enabling companies to unlock value
+			and innovation from every possible source of data, from traditional databases to the Internet of Things.
+		</p3>
+		<br/><br/>
+		<p3>
+			Find out more in 1-2-3.
+		</p3>
+		<br/><br/><br/>
+		
+		<script type="text/javascript">
+		<!--
+
+		function visibility_switch(id) {
+
+	    if(id == 'box1') {
+    		document.getElementById('box1').style.display = "block";
+    		document.getElementById('box2').style.display = "none";
+    		document.getElementById('box3').style.display = "none";
+    		}
+    
+	 	if(id == 'box2') {
+    		document.getElementById('box2').style.display = "block";
+    		document.getElementById('box1').style.display = "none";
+    		document.getElementById('box3').style.display = "none";
+    		}
+    
+        if(id == 'box3') {
+    		document.getElementById('box3').style.display = "block";
+    		document.getElementById('box1').style.display = "none";
+    		document.getElementById('box2').style.display = "none";
+    		}
+   		}
+		
+
+//-->
+</script>
+	
+	<a class="button2" href="#" onclick="visibility_switch('box1');">Data Value Chain</a> | <a class="button2" href="#" onclick="visibility_switch('box2');">Our Offerings</a> | <a class="button2" href="#" onclick="visibility_switch('box3');">Case Studies</a>
+	<br/><br/><br/>
+	<div id="box1">
+		<h3 style="margin-top: 0px">Data Value Chain</h3>
+		Datacraft services emphasise the importance of moving along the full length of the <b>Data Value Chain</b>.
+		<img class="home_icon" src="images/solutions/value-chain.png" style="margin-top:20px; width:80%; cell-padding: 20px"></img>
+		<table class="table2">
+			<tr>
+				<td><h4 style="padding:0px 10px">"HOW DO WE HANDLE ALL OF THIS DATA?"</h4></td>
+				<td><h4>"WHAT INSIGHTS IS THE DATA GIVING US?"</h4></td>
+				<td><h4>"WHAT WILL WE DO TO REALISE THE VALUE?"</h4></td>
+			</tr>
+			<tr>
+				<td>
+					<ul class="no_bullet">
+						<li class="check">Data acquisition</li>
+						<li class="check">Data storage</li>
+						<li class="check">Database systems</li>
+						<li class="check">Information management</li>
+						<li class="check">Security & privacy</li>
+					</ul>
+				</td>
+				<td>
+					<ul class="no_bullet">
+						<li class="check">Visualisation</li>
+						<li class="check">Pattern recognition</li>
+						<li class="check">Statistics / data science</li>
+						<li class="check">Performance monitoring</li>
+						<li class="check">Predictive modelling</li>
+						<li class="check">Machine learning</li>
+					</ul>
+				</td>
+				<td>
+					<ul class="no_bullet">
+						<li class="check">Leadership</li>
+						<li class="check">Strategy</li>
+						<li class="check">Operations</li>
+						<li class="check">Change management</li>
+						<li class="check">Product design</li>
+						<li class="check">Marketing</li>
+						<li class="check">Personalisation</li>
+					</ul>
+				</td>
+			</tr>
+		</table>
 	</div>
+
+<div id="box2" class="switchgroup">
+	<h3 style="margin-top: 0px">Our Offerings</h3>
+	Our solutions include a comprehensive package of services tailored to your organisation's specific needs.
+	<br/><br/>
+	<table style="width:100%">
+				<tr>
+					<td>
+						<img class="home_icon" src="images/solutions/diagnostic.png" style="width:50px"></img>
+						<h4>DATA DIAGNOSTIC</h4>
+						<p>Review your company's data inventory and <b>identify opportunities</b>
+						to unlock hidden value from Big Data.</p>
+					</td>
+					<td>
+						<img class="home_icon" src="images/solutions/custom.png" style="width:50px"></img>
+						<h4>CUSTOM DATA SOLUTIONS</h4>
+						<p>Get <b>value from your data</b> from an end-to-end solution incorporating the best technology and substantive industry experience</p>
+					</td>
+					<td>
+						<img class="home_icon" src="images/solutions/strategy.png" style="width:50px">
+						<h4>BIG DATA STRATEGY</h4>
+						<p>Develop your <b>long-term vision</b> to realilse value from data and become an effective <b>data-driven organisation</b></p>
+					</td>
+					<td>
+						<img class="home_icon" src="images/solutions/analysis.png" style="width:50px">
+						<h4>ANALYTICAL SOLUTIONS</h4>
+						<p>Produce <b>reports and custom analysis</b>, using either your own Big Data or data from external sources</p>
+					</td>
+				</tr>
+			</table>
+		<br/>
+		<p3><a href="mailto:info@datacraft.sg">Contact us</a> to learn more about our services.</p3>
+</div>
+
+<div id="box3" class="switchgroup">
+	<h3 style="margin-top: 0px">Case Studies</h3>
+	Our clients trust the services we provide because we are committed to delivering consistently impactful results. See Datacraft in action below
+	with a snapshot of our growing portfolio of success stories.
+	<br/>
+	
+	<script javascript>
+	var sliderOptions=
+	{
+		sliderId: "slider",
+		startSlide: 0,
+		effect: "13",
+		effectRandom: false,
+		pauseTime: 2500,
+		transitionTime: 500,
+		slices: 14,
+		boxes: 11,
+		hoverPause: 2,
+		autoAdvance: false,
+		captionOpacity: 0.5,
+		captionEffect: "rotate",
+		thumbnailsWrapperId: null,
+		m: true,
+		license: "mylicense"
+	};
+
+	var imageSlider=new mcImgSlider(sliderOptions);
+	</script>
+	
+	<div id="sliderFrame">
+    <div id="slider" style="background: url(images/slider/active-bg.png) no-repeat;">
+            <img src="images/solutions/graph1.png" 
+            	 alt="<h4>Linking Lifestyle to Diabetes</h4>
+        			  <p2>Combining a system of patient logging and continuous glucose monitoring (CGM) allowed us to clearly
+        			  visualise the link between lifestyle habits and blood glucose levels.</p2>" 
+        		style="display: none;">
+            <img src="images/solutions/graph2.png" 
+             	 alt="<h4>Streamlining Diabetes Care</h4> 
+           			  <p2>Our advanced analytics platform supported healthcare professionals and diabetic patients by automating data interpretation from continuous glucose monitoring (CGM) to create
+						meaningful, efficient personalised care plans.</p2>" 
+            	style="display: none;">
+            <img src="images/solutions/graph3.png" 
+            	 alt="<h4>Evaluating Comfort</h4> 
+            		  <p2> Based on sensor readings from the homes of the elderly, we created insightful, customer-friendly visualisations to illustrate
+           			  the living conditions of Seniors.</p2> 
+           		   	  <a class='home_icon' href='http://silverline.mobi/'><img src='images/solutions/silverline.png' width='60'></a>" 
+				style="display: none;">
+            <img src="images/solutions/graph4.png" 
+                 alt="<h4>Detecting Lifestyle Patterns</h4>
+           			  <p2>Using advanced analytics and sensor readings from Seniors' homes, we were able to establish a pattern of lifestyle habits, which served as the basis for alert services for Senior caregivers when activity deviated from regular lifestyle patterns.</p2> 
+                      <a class='home_icon' href='http://silverline.mobi/'> <img	src='images/solutions/silverline.png' width='60'></a>" 
+                 style="display: none;">
+        <div class="mc-caption-bg" style="opacity: 0;">
+        	<div class="mc-caption" style="width: 960px;">
+        	</div>
+        </div>
+        <div class="mc-caption-bg2" style="opacity: 0;">
+        	<div class="mc-caption" style="width: 960px;"></div>
+        </div>
+        	<div class="navBulletsWrapper">
+        		<div rel="0" class="">1</div>
+        		<div rel="1" class="active">2</div>
+        		<div rel="2" class="">3</div>
+        		<div rel="3" class="">4</div>
+        	</div>
+        <div class="loading" style="display: none;"></div>
+        <div class="sliderInner">
+        	<div class="mcSlc" style="left: 0px; width: 960px; height: 400px; z-index: 1; position: absolute; opacity: 1; top: 0px; background: transparent 0% 100% no-repeat;">
+        	</div>
+     	 </div>
+    </div>
+        <!--Custom navigation buttons on both sides-->
+        <div class="group1-Wrapper">
+            <a onclick="imageSlider.previous()" class="group1-Prev"></a>
+            <a onclick="imageSlider.next()" class="group1-Next"></a>
+        </div>
+        <!--nav bar-->
+        <div style="text-align:center;padding:20px;z-index:20;">
+            <a onclick="imageSlider.previous()" class="group2-Prev"></a>
+            <a id="auto" onclick="switchAutoAdvance()" class="group2-Pause" title="Pause" style="none"></a>
+            <a onclick="imageSlider.next()" class="group2-Next"></a>
+        </div>
+    </div>
+</div>
+
+    
+	</div>
+	
 	<div class="w-container content" style="display: none;">
 		<h2>Solutions</h2>
 		<h3>CASE STUDIES</h3>
