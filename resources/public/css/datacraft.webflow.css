@@ -117,6 +117,15 @@ p3 {
     margin-right: auto;
 }
  
+ .banner-div {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: transparent;
+ }
+ 
 #box1 {
   font-family:'Droid Sans', sans-serif;
   color: black;
@@ -346,8 +355,9 @@ li.check {
 }
 
 .banner-button {
-  position:absolute;
-  right:50px;
+  position:relative;
+  margin-left: 40%;
+  margin-right: 33%; 
   margin-top: 25px;
   display: inline;
   padding: 11px 38px;
