@@ -18,7 +18,8 @@
 		
 		<script type="text/javascript">
 		<!--
-
+				
+	
 		function switch_buttons (button) {
 			document.getElementById('box1button').style.backgroundColor="#94b6dd";
 			document.getElementById('box2button').style.backgroundColor="#94b6dd";
@@ -47,6 +48,15 @@
     		document.getElementById('box2').style.display = "none";
     		}
    		};
+   		
+   		window.onload = function() {
+   			var hash = window.location.hash;
+   			if (hash != "box2") {
+   				var id = hash.substr(1)
+   				document.getElementByID('box2').style.display="block";
+   			}
+   			
+   		}
 		
 
 //-->
@@ -166,13 +176,13 @@
 	<div id="sliderFrame">
     <div id="slider" style="background: url(images/slider/active-bg.png) no-repeat;">
             <img src="images/solutions/graph1.png" 
-            	 alt="<h4>Streamlining Diabetes Care</h4>
+            	 alt="<h4>Streamlining Diabetes Management</h4>
         			  <p2>Having identified the opportunity to make reading continuous glucose monitoring (CGM) data more efficient and impactful, we are providing Medtronic, a leading medical technology
         			  company in diabetes care, with an advanced analytics platform to automatically analyse CGM results from diabetes patients.</p2>
         			  <a class='home_icon' href='http://medtronic.com/'> <img src='images/solutions/medtronic.png' style='margin-left: 100px' width='100'></a>"
         		style="display: none;">
             <img src="images/solutions/graph4.png" 
-                 alt="<h4>Improving Senior Care</h4>
+                 alt="<h4>Sensor Data Analytics</h4>
            			  <p2>Initially providing Silverline Mobile with server infrastructure for the data collected from various sensors set up in the homes of the elderly,
            			  we are analysing this data in real-time to provide advanced analytical solutions in identifying healthy living patterns and setting up alert services to caregivers
            			  when notable pattern disruption is detected.</p2> 
