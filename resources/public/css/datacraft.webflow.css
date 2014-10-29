@@ -12,8 +12,8 @@ h1 {
   margin-bottom: 30px;
   font-family:'Droid Sans', sans-serif;
   color: black;
-  font-size: 24px;
-  line-height: 40px;
+  font-size: 40px;
+  line-height: 65px;
   font-weight: 400;
   text-align: left;
   text-transform: none;
@@ -43,8 +43,8 @@ h4 {
   margin-bottom: 10px;
   font-family:'Droid Sans', sans-serif;
   color: #2a6ebb;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 21px;
+  line-height: 30px;
   font-weight: 400;
   text-align: center;
 }
@@ -86,8 +86,8 @@ p {
   padding-left: 20px;
   font-family:'Droid Sans', sans-serif;
   color: black;
-  font-size: 13px;
-  line-height: 20px;
+  font-size: 20px;
+  line-height: 30px;
   text-align: center;
 }
 p2 {
@@ -116,15 +116,6 @@ p3 {
 	margin-left: auto;
     margin-right: auto;
 }
- 
- .banner-div {
-  position: relative;
-  display: block;
-  min-height: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  background-color: transparent;
- }
  
 #box1 {
   font-family:'Droid Sans', sans-serif;
@@ -355,16 +346,14 @@ li.check {
 }
 
 .banner-button {
-  position:relative;
+  position:inline;
   margin-left: 40%;
-  margin-right: 33%; 
   margin-top: 25px;
-  display: inline;
   padding: 11px 38px;
   border-radius: 0px;
   background-color: #94b6dd;
   font-family:'Droid Sans', sans-serif;
-  font-size: 20px;
+  font-size: 30px;
   color: white;
   font-weight: 600;
   text-align: center;
@@ -410,7 +399,7 @@ td {
   background-color: #2a6ebb;
   font-family: Exo, sans-serif;
   color: white;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 400;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -537,7 +526,7 @@ td {
   bottom: auto;
   max-height: 1px;
   min-height: 1px;
-  margin-top: 30px;
+  margin-top: 70px;
   margin-bottom: 30px;
   background-color: #a6a6a6;
 }
