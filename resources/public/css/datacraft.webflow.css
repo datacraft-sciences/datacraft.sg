@@ -20,21 +20,21 @@ h1 {
 }
 h2 {
   height: auto;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-family:'Droid Sans', sans-serif;
   color: #2a6ebb;
-  font-size: 30px;
+  font-size: 40px;
   line-height: 36px;
   font-weight: 400;
   text-transform: none;
 }
 h3 {
   margin-top: 20px;
-  margin-bottom: 0px;
+  margin-bottom: 15px;
   font-family:'Droid Sans', sans-serif;
   color: #2a6ebb;
-  font-size: 20px;
+  font-size: 30px;
   line-height: 30px;
   font-weight: 400;
 }
@@ -105,7 +105,7 @@ p2 {
 p3 {
   font-family:'Droid Sans', sans-serif;
   color: black;
-  font-size: 13px;
+  font-size: 20px;
   line-height: 20px;
   text-align: left;
 }
@@ -120,7 +120,7 @@ p3 {
 #box1 {
   font-family:'Droid Sans', sans-serif;
   color: black;
-  font-size: 13px;
+  font-size: 20px;
   line-height: 20px;
   text-align: left;
 }
@@ -128,7 +128,7 @@ p3 {
 #box2 {
   font-family:'Droid Sans', sans-serif;
   color: black;
-  font-size: 13px;
+  font-size: 20px;
   line-height: 20px;
   text-align: left;
 }
@@ -136,7 +136,7 @@ p3 {
 #box3 {
   font-family:'Droid Sans', sans-serif;
   color: black;
-  font-size: 13px;
+  font-size: 20px;
   line-height: 20px;
   text-align: left;
 }
@@ -227,7 +227,7 @@ p3 {
 }
 
 #slider img, #slider>b, #slider a>b {
-	border:none; margin-left: 130px;
+	border:none; margin-right: 130px;
 }
 
 #slider div.sliderInner {
@@ -330,11 +330,12 @@ li.check {
 .button2 {
   display: inline;
   margin-top: 15px;
-  padding: 9px 107px;
+  padding: 9px 118px;
   background-color: #94b6dd;
   font-family:'Droid Sans', sans-serif;
   color: white;
   font-weight: 400;
+  font-size:20px;
   text-align: left;
   text-decoration: none;
 }
