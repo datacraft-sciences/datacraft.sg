@@ -26,7 +26,7 @@
   (GET "/technology.html" params (selmer/render-file "technology.html" params))
   (GET "/why-datacraft.html" params (selmer/render-file "why-datacraft.html" params))
   (GET "/about-us.html" params (selmer/render-file "about-us.html" params))
-  (GET "/meet-the-team.html" params (selmer/render-file "contact-us.html" params))
+  (GET "/meet-the-team.html" params (selmer/render-file "meet-the-team.html" params))
   (GET "/contact-us.html" params (selmer/render-file "contact-us.html" params))
   
   (route/resources "/")   ;; defaults to reading from /public path on classpath
