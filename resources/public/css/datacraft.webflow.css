@@ -550,6 +550,17 @@ td {
   font-weight: 700;
   text-decoration: none;
 }
+.footer-text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding:10px;
+  font-family:'Droid Sans', sans-serif;
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+
 .line {
   position: relative;
   top: 10px;
@@ -569,15 +580,7 @@ td {
   margin-right:-20px;
   background-color: #a6a6a6;
 }
-.footer-text {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-family:'Droid Sans', sans-serif;
-  color: white;
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 0px;
-}
+
 
 .p2 {
   display: block;
