@@ -494,7 +494,7 @@ td {
 
 .socialicon {
   display: inline;
-  margin: 5px
+  margin-bottom: 5px
 }
 
 .row {
@@ -572,7 +572,6 @@ td {
 .footer-text {
   margin-top: 0px;
   margin-bottom: 0px;
-  padding: 15px 30px;
   font-family:'Droid Sans', sans-serif;
   color: white;
   font-size: 12px;
