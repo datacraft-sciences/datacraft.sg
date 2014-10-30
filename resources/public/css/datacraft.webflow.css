@@ -328,6 +328,12 @@ li.check {
   text-decoration: none;
 }
 
+.button:hover {
+  color: #2a6ebb;
+  font-weight: 700;
+  text-align: center;
+}
+
 .button2 {
   display: inline;
   margin-top: 15px;
@@ -380,9 +386,10 @@ li.check {
   text-align: center;
   text-decoration: none;
 }
-.button:hover {
+
+.banner-button:hover {
   color: #2a6ebb;
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
 }
 
