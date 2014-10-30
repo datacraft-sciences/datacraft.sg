@@ -49,14 +49,8 @@
     		}
    		};
    		
-   		window.onload = function() {
-   			var hash = window.location.hash;
-   			if (hash != "box2") {
-   				var id = hash.substr(1)
-   				document.getElementByID('box2').style.display="block";
-   			}
-   			
-   		}
+   		
+		
 		
 
 //-->
@@ -141,7 +135,7 @@
 				</tr>
 			</table>
 		<br/>
-		<p3><a href="mailto:info@datacraft.sg">Contact us</a> to learn more about our services.</p3>
+		<p3 style="font-size:18px"><a href="mailto:info@datacraft.sg">Contact us</a> to learn more about our services.</p3>
 </div>
 
 <div id="box3" class="switchgroup">
@@ -174,7 +168,7 @@
 	</script>
 
 		<div id="sliderFrame">
-	    <div id="slider" style="background: url(images/slider/active-bg.png) no-repeat;">
+	    <div id="slider" style="background: transparent;">
 	            <img src="images/solutions/graph1.png" 
 	            	 alt="<h4 style='font-size:15px; text-align: left; line-height: 20px'>Streamlining Diabetes Management</h4>
 	        			  <p2>Having identified the opportunity to make interpreting continuous glucose monitoring (CGM) data more efficient and impactful, we are providing Medtronic, a leading medical technology
@@ -309,5 +303,13 @@
 		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/webflow.js"></script>
 	<!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+
+<script type="text/javascript">
+	if ( location.hash.length > 1 )
+		{
+			visibility_switch( location.hash.substring(1) );
+		};
+</script>
+
 </body>
 </html>
