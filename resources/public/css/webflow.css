@@ -276,8 +276,8 @@ textarea.w-select {
   float: left;
   width: 100%;
   min-height: 1px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .w-col .w-col {
   padding-left: 0;
@@ -294,6 +294,8 @@ textarea.w-select {
 }
 .w-col-4 {
   width: 33.33333333%;
+  padding-left:30px;
+  padding-right:30px
 }
 .w-col-5 {
   width: 41.66666667%;
