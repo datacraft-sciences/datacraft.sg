@@ -5,7 +5,7 @@
   (:require [compojure.handler :as handler]
             [clout.core] 
             [compojure.route :as route]
-            [compojure.core :as cc :refer [GET POST DELETE PUT ANY OPTIONS defroutes]]
+            [compojure.core :as cc :refer [GET POST DELETE PUT ANY OPTIONS defroutes context]]
             [ring.util.response :as resp]
             [ring.middleware.cors :refer [wrap-cors]] 
             [ring.middleware.params]
@@ -29,6 +29,10 @@
   (GET "/about-us.html" params (selmer/render-file "about-us.html" params))
   (GET "/meet-the-team.html" params (selmer/render-file "meet-the-team.html" params))
   (GET "/contact-us.html" params (selmer/render-file "contact-us.html" params))
+  
+  (context "/info" []
+    (GET "/" params "correct info path")
+    (GET "/custom-resource-path" params (pr-str @selmer.util/custom-resource-path)))
   
   (route/resources "/")   ;; defaults to reading from /public path on classpath
   (route/files "/" {:root "~/public"})

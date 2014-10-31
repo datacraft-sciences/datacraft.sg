@@ -1,4 +1,4 @@
-(defproject datacraft "0.0.1-SNAPSHOT"
+(defproject datacraft "0.0.1"
   :description "FIXME: write this!"
   :url "http://example.com/FIXME"
 
