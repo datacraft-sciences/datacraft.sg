@@ -172,7 +172,7 @@ p3 {
 	height:auto;
 	padding:20px;
 	right:30px; /* or left: ??px; */
-	top:15px;/* or top: ??px; */
+	top:-12px;/* or top: ??px; */
 	z-index:3;
 	overflow:hidden;
 	font-size:0;
