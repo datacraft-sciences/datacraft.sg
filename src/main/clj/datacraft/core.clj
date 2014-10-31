@@ -22,6 +22,7 @@
 
 (defroutes app-routes
   (GET "/index.html" params (selmer/render-file "index.html" params))
+  (GET "/404.html" params (selmer/render-file "404.html" params))
   (GET "/solutions.html" params (selmer/render-file "solutions.html" params))
   (GET "/technology.html" params (selmer/render-file "technology.html" params))
   (GET "/why-datacraft.html" params (selmer/render-file "why-datacraft.html" params))
@@ -35,8 +36,7 @@
   
   (GET "/" [] (resp/redirect "/index.html"))
 
-  (route/not-found "<p>404 - Page Not Found.</p> 
-                    <p>Perhaps you want the <a href=\"\\index.html\">index.html</a>?</p>"))
+  (route/not-found (selmer/render-file "404.html" {})))
 
 (def app
   (-> app-routes 
