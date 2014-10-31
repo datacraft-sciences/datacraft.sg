@@ -36,7 +36,7 @@
   
   (GET "/" [] (resp/redirect "/index.html"))
 
-  (route/not-found (selmer/render-file "404.html" {})))
+  (route/not-found "Page not found"))
 
 (def app
   (-> app-routes 
