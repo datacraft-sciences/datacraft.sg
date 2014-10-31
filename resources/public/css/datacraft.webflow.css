@@ -39,8 +39,6 @@ h3 {
   font-weight: 400;
 }
 h4 {
-  margin-top: 15px;
-  margin-bottom: 10px;
   font-family:'Droid Sans', sans-serif;
   color: #2a6ebb;
   font-size: 19px;
@@ -397,6 +395,22 @@ li.check {
 .table2{
   width:80%; 
   margin-left:110px; 
+}
+
+table.table3{
+  border-collapse:separate;
+  width:100%;
+}
+
+table.table3 td{
+  padding-left:10px;
+  padding-right:10px;
+  padding-top:10px
+}
+
+
+table.table4 td{
+  padding-top:10px;
 }
 
 td2 {
