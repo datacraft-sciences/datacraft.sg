@@ -91,12 +91,9 @@ p {
   text-align: justify;
 }
 p2 {
-  margin-top: 10px;
-  margin-bottom: 5px;
-  padding-right: 20px;
   font-family:'Droid Sans', sans-serif;
   color: black;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   text-align: justify;
   
@@ -177,11 +174,11 @@ p3 {
 /* Caption styles */
 #slider div.mc-caption-bg, #slider div.mc-caption-bg2 {
 	position:absolute;
-	width:190px;
+	width:225px;
 	height:auto;
 	padding:20px;
 	right:30px; /* or left: ??px; */
-	top:60px;/* or top: ??px; */
+	top:15px;/* or top: ??px; */
 	z-index:3;
 	overflow:hidden;
 	font-size:0;
