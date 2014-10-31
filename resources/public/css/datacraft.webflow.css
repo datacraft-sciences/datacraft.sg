@@ -82,13 +82,13 @@ h7 {
 p {
   margin-top: 15px;
   margin-bottom: 5px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 15px;
+  padding-left: 15px;
   font-family:'Droid Sans', sans-serif;
   color: black;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 20px;
-  text-align: center;
+  text-align: justify;
 }
 p2 {
   margin-top: 10px;
@@ -96,7 +96,7 @@ p2 {
   padding-right: 20px;
   font-family:'Droid Sans', sans-serif;
   color: black;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 20px;
   text-align: justify;
   
@@ -105,7 +105,7 @@ p2 {
 p3 {
   font-family:'Droid Sans', sans-serif;
   color: black;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 20px;
   text-align: left;
 }
