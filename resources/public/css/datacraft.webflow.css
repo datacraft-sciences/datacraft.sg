@@ -413,6 +413,19 @@ table.table4 td{
   padding-top:10px;
 }
 
+table.table5
+{
+	border-collapse:separate;
+	width: 100%; 
+	margin-top: 30px
+}
+
+table.table5 td{
+  padding-left:15px;
+  padding-right: 15px;
+  padding-bottom:10px
+}
+
 td2 {
   vertical-align:top;
   padding: 10px;
