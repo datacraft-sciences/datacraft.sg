@@ -2,10 +2,10 @@
   :description "FIXME: write this!"
   :url "http://example.com/FIXME"
 
-  :dependencies [[org.clojure/clojure "1.6.0"]
-                 [net.mikera/trellis "0.0.4" :exclusions [org.clojure/clojure]]
-                 [net.mikera/timeline "0.3.0"]
-                 [selmer "0.7.2"]
+  :dependencies [[org.clojure/clojure "1.8.0-alpha4"]
+                 [net.mikera/trellis "0.0.6" :exclusions [org.clojure/clojure]]
+                 [net.mikera/timeline "0.4.0"]
+                 [selmer "0.8.8"]
                  [log4j/log4j "1.2.17" :exclusions [javax.mail/mail
                                               javax.jms/jms
                                               com.sun.jdmk/jmxtools
