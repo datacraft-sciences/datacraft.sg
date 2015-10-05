@@ -11,6 +11,8 @@
             [ring.middleware.params]
             [clojure.java.jdbc :as j]
             [cheshire.core :as json]
+            [hiccup.util :refer [escape-html]]
+            [hiccup.core :refer [html]]
             [clojure.string]
             [clojure.java.io :as io])
   (:require [clojure.tools.logging :as log])
@@ -29,10 +31,11 @@
   (GET "/about-us.html" params (selmer/render-file "about-us.html" params))
   (GET "/meet-the-team.html" params (selmer/render-file "meet-the-team.html" params))
   (GET "/contact-us.html" params (selmer/render-file "contact-us.html" params))
+  (GET "/error.html" params (error "fvodbhofvbofe"))
   
   (context "/info" []
     (GET "/" params "correct info path")
-    (GET "/custom-resource-path" params (pr-str @selmer.util/custom-resource-path)))
+    (GET "/custom-resource-path" params (pr-str @selmer.util/*custom-resource-path*)))
   
   (route/resources "/")   ;; defaults to reading from /public path on classpath
   (route/files "/" {:root "~/public"})
@@ -42,8 +45,18 @@
 
   (route/not-found "Page not found"))
 
+(defn wrap-error [handler]
+  (fn [request]
+    (try (handler request)
+      (catch Exception e
+         (let [etext (stacktrace-str e)
+               etext (clojure.string/replace etext "\n" "<br/>")]
+           {:status 500
+            :body (selmer/render-file "500.html" {:error-text [:safe etext]})})))))
+
 (def app
   (-> app-routes 
+      wrap-error
       ;; (wrap-cors :access-control-allow-origin #".*")
       (handler/site)))
 
