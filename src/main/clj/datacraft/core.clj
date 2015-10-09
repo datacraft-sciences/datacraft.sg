@@ -24,10 +24,11 @@
 
 (defroutes app-routes
   (route/resources "/")   ;; defaults to reading from /public path on classpath
-  (route/files "/" {:root "~/public"})
-  (route/files "/" {:root "/public"})
   
   (GET "/" [] (resp/redirect "/index.html"))
+
+  (route/files "/" {:root "~/public"})
+  (route/files "/" {:root "/public"})
 
   (ANY "/:path" [] (resp/redirect "/404.html")))
 
