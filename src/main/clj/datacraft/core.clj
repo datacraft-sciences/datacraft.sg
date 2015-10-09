@@ -23,27 +23,13 @@
 (selmer.parser/set-resource-path! (clojure.java.io/resource "templates"))
 
 (defroutes app-routes
-  (GET "/index.html" params (selmer/render-file "index.html" params))
-  (GET "/404.html" params (selmer/render-file "404.html" params))
-  (GET "/solutions.html" params (selmer/render-file "solutions.html" params))
-  (GET "/technology.html" params (selmer/render-file "technology.html" params))
-  (GET "/why-datacraft.html" params (selmer/render-file "why-datacraft.html" params))
-  (GET "/about-us.html" params (selmer/render-file "about-us.html" params))
-  (GET "/meet-the-team.html" params (selmer/render-file "meet-the-team.html" params))
-  (GET "/contact-us.html" params (selmer/render-file "contact-us.html" params))
-  (GET "/error.html" params (error "fvodbhofvbofe"))
-  
-  (context "/info" []
-    (GET "/" params "correct info path")
-    (GET "/custom-resource-path" params (pr-str @selmer.util/*custom-resource-path*)))
-  
   (route/resources "/")   ;; defaults to reading from /public path on classpath
   (route/files "/" {:root "~/public"})
   (route/files "/" {:root "/public"})
   
   (GET "/" [] (resp/redirect "/index.html"))
 
-  (route/not-found "Page not found"))
+  (ANY "/:path" [] (resp/redirect "/404.html")))
 
 (defn wrap-error [handler]
   (fn [request]
